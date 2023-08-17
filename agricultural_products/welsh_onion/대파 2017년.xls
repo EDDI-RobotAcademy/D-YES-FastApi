@@ -1,0 +1,8141 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<title>가격정보 - 친환경농산물 - 품목별 엑셀 출력</title>
+	<meta http-equiv="Content-Type" content="application/vnd.ms-excel;charset=utf-8">
+	<style type="text/css">
+		table caption	{ text-align:left; }
+		table th		{ background-color:#eff2f9; }
+		table td		{ mso-number-format:\@; text-align:general; vertical-align:middle; text-align:center; white-space:nowrap; mso-rotate:0; mso-background-source:auto; mso-pattern:auto; color:black; font-size:11.0pt; font-style:normal; text-decoration:none; font-family:"맑은 고딕", monospace; mso-font-charset:129; border:1px; mso-protection:locked visible; mso-style-name:표준; mso-style-id:0; }
+		table td.c		{ text-align:center;}
+		table td.l		{ text-align:left; }
+		table td.r		{ text-align:right; }
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td	class="data">
+				<table id="data" border="1px">
+					
+							<caption></caption>
+								<colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col>
+								
+								<!-- header 생성 -->
+								
+									
+										
+											
+												</colgroup><tbody><tr>
+													<th scope="col" class="first" colspan="1">구분</th>
+											
+											<th scope="col" class="">01/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/05</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/09</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">01/31</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/01</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/09</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">02/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/09</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/29</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/30</th>
+											
+											
+										
+											
+											<th scope="col" class="">03/31</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/05</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">04/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/29</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/30</th>
+											
+											
+										
+											
+											<th scope="col" class="">05/31</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/01</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/05</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/09</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/29</th>
+											
+											
+										
+											
+											<th scope="col" class="">06/30</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/05</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">07/31</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/01</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/09</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/29</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/30</th>
+											
+											
+										
+											
+											<th scope="col" class="">08/31</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/01</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/05</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">09/29</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/25</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/30</th>
+											
+											
+										
+											
+											<th scope="col" class="">10/31</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/01</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/02</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/03</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/09</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/10</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/16</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/17</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/23</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/24</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/28</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/29</th>
+											
+											
+										
+											
+											<th scope="col" class="">11/30</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/04</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/05</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/06</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/07</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/08</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/11</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/12</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/13</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/14</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/15</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/18</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/19</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/20</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/21</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/22</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/26</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/27</th>
+											
+											
+										
+											
+											<th scope="col" class="">12/28</th>
+											
+											
+										
+											
+											<th scope="col" class="last">12/29</th>
+											
+												</tr>
+											
+											
+										
+									
+								
+									
+								
+								
+								<!-- body 생성 -->
+								
+									
+										<tr class="fwb">
+											
+												<td class="first cell_tit1" colspan="1">평균</td>
+											
+											
+									
+									<td class="">2,580</td>
+									
+								
+									
+									<td class="">2,640</td>
+									
+								
+									
+									<td class="">2,560</td>
+									
+								
+									
+									<td class="">2,520</td>
+									
+								
+									
+									<td class="">2,520</td>
+									
+								
+									
+									<td class="">2,450</td>
+									
+								
+									
+									<td class="">2,450</td>
+									
+								
+									
+									<td class="">2,430</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,480</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,540</td>
+									
+								
+									
+									<td class="">2,540</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,480</td>
+									
+								
+									
+									<td class="">2,480</td>
+									
+								
+									
+									<td class="">2,440</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,440</td>
+									
+								
+									
+									<td class="">2,460</td>
+									
+								
+									
+									<td class="">2,460</td>
+									
+								
+									
+									<td class="">2,460</td>
+									
+								
+									
+									<td class="">2,460</td>
+									
+								
+									
+									<td class="">2,680</td>
+									
+								
+									
+									<td class="">2,680</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,640</td>
+									
+								
+									
+									<td class="">2,720</td>
+									
+								
+									
+									<td class="">2,740</td>
+									
+								
+									
+									<td class="">2,720</td>
+									
+								
+									
+									<td class="">2,840</td>
+									
+								
+									
+									<td class="">2,860</td>
+									
+								
+									
+									<td class="">3,180</td>
+									
+								
+									
+									<td class="">3,080</td>
+									
+								
+									
+									<td class="">3,080</td>
+									
+								
+									
+									<td class="">3,040</td>
+									
+								
+									
+									<td class="">3,020</td>
+									
+								
+									
+									<td class="">2,980</td>
+									
+								
+									
+									<td class="">2,920</td>
+									
+								
+									
+									<td class="">2,780</td>
+									
+								
+									
+									<td class="">2,860</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,680</td>
+									
+								
+									
+									<td class="">2,760</td>
+									
+								
+									
+									<td class="">2,820</td>
+									
+								
+									
+									<td class="">2,780</td>
+									
+								
+									
+									<td class="">2,780</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,620</td>
+									
+								
+									
+									<td class="">2,660</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,740</td>
+									
+								
+									
+									<td class="">2,650</td>
+									
+								
+									
+									<td class="">2,480</td>
+									
+								
+									
+									<td class="">2,480</td>
+									
+								
+									
+									<td class="">2,520</td>
+									
+								
+									
+									<td class="">2,480</td>
+									
+								
+									
+									<td class="">2,440</td>
+									
+								
+									
+									<td class="">2,440</td>
+									
+								
+									
+									<td class="">2,420</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,260</td>
+									
+								
+									
+									<td class="">2,140</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">1,960</td>
+									
+								
+									
+									<td class="">1,960</td>
+									
+								
+									
+									<td class="">1,740</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,620</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,740</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,660</td>
+									
+								
+									
+									<td class="">1,620</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,630</td>
+									
+								
+									
+									<td class="">1,630</td>
+									
+								
+									
+									<td class="">1,630</td>
+									
+								
+									
+									<td class="">1,540</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,460</td>
+									
+								
+									
+									<td class="">1,460</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,410</td>
+									
+								
+									
+									<td class="">1,410</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,390</td>
+									
+								
+									
+									<td class="">1,390</td>
+									
+								
+									
+									<td class="">1,370</td>
+									
+								
+									
+									<td class="">1,420</td>
+									
+								
+									
+									<td class="">1,360</td>
+									
+								
+									
+									<td class="">1,280</td>
+									
+								
+									
+									<td class="">1,280</td>
+									
+								
+									
+									<td class="">1,290</td>
+									
+								
+									
+									<td class="">1,390</td>
+									
+								
+									
+									<td class="">1,390</td>
+									
+								
+									
+									<td class="">1,390</td>
+									
+								
+									
+									<td class="">1,390</td>
+									
+								
+									
+									<td class="">1,450</td>
+									
+								
+									
+									<td class="">1,520</td>
+									
+								
+									
+									<td class="">1,440</td>
+									
+								
+									
+									<td class="">1,380</td>
+									
+								
+									
+									<td class="">1,320</td>
+									
+								
+									
+									<td class="">1,320</td>
+									
+								
+									
+									<td class="">1,320</td>
+									
+								
+									
+									<td class="">1,310</td>
+									
+								
+									
+									<td class="">1,310</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,430</td>
+									
+								
+									
+									<td class="">1,470</td>
+									
+								
+									
+									<td class="">1,470</td>
+									
+								
+									
+									<td class="">1,430</td>
+									
+								
+									
+									<td class="">1,430</td>
+									
+								
+									
+									<td class="">1,410</td>
+									
+								
+									
+									<td class="">1,470</td>
+									
+								
+									
+									<td class="">1,590</td>
+									
+								
+									
+									<td class="">1,650</td>
+									
+								
+									
+									<td class="">1,650</td>
+									
+								
+									
+									<td class="">1,630</td>
+									
+								
+									
+									<td class="">1,610</td>
+									
+								
+									
+									<td class="">1,610</td>
+									
+								
+									
+									<td class="">1,750</td>
+									
+								
+									
+									<td class="">1,810</td>
+									
+								
+									
+									<td class="">1,870</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,860</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,980</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,270</td>
+									
+								
+									
+									<td class="">2,380</td>
+									
+								
+									
+									<td class="">2,360</td>
+									
+								
+									
+									<td class="">2,360</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,340</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,280</td>
+									
+								
+									
+									<td class="">2,280</td>
+									
+								
+									
+									<td class="">2,360</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,340</td>
+									
+								
+									
+									<td class="">2,420</td>
+									
+								
+									
+									<td class="">2,420</td>
+									
+								
+									
+									<td class="">2,420</td>
+									
+								
+									
+									<td class="">2,340</td>
+									
+								
+									
+									<td class="">2,280</td>
+									
+								
+									
+									<td class="">2,340</td>
+									
+								
+									
+									<td class="">2,320</td>
+									
+								
+									
+									<td class="">2,240</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,160</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,120</td>
+									
+								
+									
+									<td class="">2,140</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,060</td>
+									
+								
+									
+									<td class="">2,040</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,880</td>
+									
+								
+									
+									<td class="">1,880</td>
+									
+								
+									
+									<td class="">1,880</td>
+									
+								
+									
+									<td class="">1,820</td>
+									
+								
+									
+									<td class="">1,820</td>
+									
+								
+									
+									<td class="">1,660</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,620</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,620</td>
+									
+								
+									
+									<td class="">1,620</td>
+									
+								
+									
+									<td class="">1,620</td>
+									
+								
+									
+									<td class="">1,820</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,740</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,720</td>
+									
+								
+									
+									<td class="">1,720</td>
+									
+								
+									
+									<td class="">1,720</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,660</td>
+									
+								
+									
+									<td class="">1,660</td>
+									
+								
+									
+									<td class="">1,640</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,640</td>
+									
+								
+									
+									<td class="">1,580</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,640</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,680</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,780</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="last">1,760</td>
+									
+										</tr>
+									
+								
+									
+										<tr class="fwb">
+											
+												<td class="first cell_tit1" colspan="1">평년</td>
+											
+											
+									
+									<td class="">1,548</td>
+									
+								
+									
+									<td class="">1,549</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,548</td>
+									
+								
+									
+									<td class="">1,501</td>
+									
+								
+									
+									<td class="">1,495</td>
+									
+								
+									
+									<td class="">1,493</td>
+									
+								
+									
+									<td class="">1,485</td>
+									
+								
+									
+									<td class="">1,469</td>
+									
+								
+									
+									<td class="">1,479</td>
+									
+								
+									
+									<td class="">1,474</td>
+									
+								
+									
+									<td class="">1,491</td>
+									
+								
+									
+									<td class="">1,499</td>
+									
+								
+									
+									<td class="">1,511</td>
+									
+								
+									
+									<td class="">1,524</td>
+									
+								
+									
+									<td class="">1,516</td>
+									
+								
+									
+									<td class="">1,513</td>
+									
+								
+									
+									<td class="">1,515</td>
+									
+								
+									
+									<td class="">1,582</td>
+									
+								
+									
+									<td class="">1,602</td>
+									
+								
+									
+									<td class="">1,616</td>
+									
+								
+									
+									<td class="">1,621</td>
+									
+								
+									
+									<td class="">1,697</td>
+									
+								
+									
+									<td class="">1,727</td>
+									
+								
+									
+									<td class="">1,752</td>
+									
+								
+									
+									<td class="">1,777</td>
+									
+								
+									
+									<td class="">1,803</td>
+									
+								
+									
+									<td class="">1,824</td>
+									
+								
+									
+									<td class="">1,834</td>
+									
+								
+									
+									<td class="">1,829</td>
+									
+								
+									
+									<td class="">1,816</td>
+									
+								
+									
+									<td class="">1,821</td>
+									
+								
+									
+									<td class="">1,818</td>
+									
+								
+									
+									<td class="">1,785</td>
+									
+								
+									
+									<td class="">1,761</td>
+									
+								
+									
+									<td class="">1,757</td>
+									
+								
+									
+									<td class="">1,770</td>
+									
+								
+									
+									<td class="">1,813</td>
+									
+								
+									
+									<td class="">1,835</td>
+									
+								
+									
+									<td class="">1,860</td>
+									
+								
+									
+									<td class="">1,856</td>
+									
+								
+									
+									<td class="">1,833</td>
+									
+								
+									
+									<td class="">1,835</td>
+									
+								
+									
+									<td class="">1,835</td>
+									
+								
+									
+									<td class="">1,827</td>
+									
+								
+									
+									<td class="">1,821</td>
+									
+								
+									
+									<td class="">1,803</td>
+									
+								
+									
+									<td class="">1,802</td>
+									
+								
+									
+									<td class="">1,811</td>
+									
+								
+									
+									<td class="">1,815</td>
+									
+								
+									
+									<td class="">1,806</td>
+									
+								
+									
+									<td class="">1,805</td>
+									
+								
+									
+									<td class="">1,794</td>
+									
+								
+									
+									<td class="">1,776</td>
+									
+								
+									
+									<td class="">1,756</td>
+									
+								
+									
+									<td class="">1,749</td>
+									
+								
+									
+									<td class="">1,742</td>
+									
+								
+									
+									<td class="">1,739</td>
+									
+								
+									
+									<td class="">1,730</td>
+									
+								
+									
+									<td class="">1,718</td>
+									
+								
+									
+									<td class="">1,702</td>
+									
+								
+									
+									<td class="">1,677</td>
+									
+								
+									
+									<td class="">1,672</td>
+									
+								
+									
+									<td class="">1,673</td>
+									
+								
+									
+									<td class="">1,675</td>
+									
+								
+									
+									<td class="">1,682</td>
+									
+								
+									
+									<td class="">1,724</td>
+									
+								
+									
+									<td class="">1,724</td>
+									
+								
+									
+									<td class="">1,725</td>
+									
+								
+									
+									<td class="">1,724</td>
+									
+								
+									
+									<td class="">1,730</td>
+									
+								
+									
+									<td class="">1,733</td>
+									
+								
+									
+									<td class="">1,730</td>
+									
+								
+									
+									<td class="">1,726</td>
+									
+								
+									
+									<td class="">1,723</td>
+									
+								
+									
+									<td class="">1,723</td>
+									
+								
+									
+									<td class="">1,722</td>
+									
+								
+									
+									<td class="">1,718</td>
+									
+								
+									
+									<td class="">1,710</td>
+									
+								
+									
+									<td class="">1,699</td>
+									
+								
+									
+									<td class="">1,709</td>
+									
+								
+									
+									<td class="">1,758</td>
+									
+								
+									
+									<td class="">1,764</td>
+									
+								
+									
+									<td class="">1,816</td>
+									
+								
+									
+									<td class="">1,847</td>
+									
+								
+									
+									<td class="">1,865</td>
+									
+								
+									
+									<td class="">1,880</td>
+									
+								
+									
+									<td class="">1,855</td>
+									
+								
+									
+									<td class="">1,834</td>
+									
+								
+									
+									<td class="">1,822</td>
+									
+								
+									
+									<td class="">1,817</td>
+									
+								
+									
+									<td class="">1,818</td>
+									
+								
+									
+									<td class="">1,827</td>
+									
+								
+									
+									<td class="">1,827</td>
+									
+								
+									
+									<td class="">1,834</td>
+									
+								
+									
+									<td class="">1,845</td>
+									
+								
+									
+									<td class="">1,861</td>
+									
+								
+									
+									<td class="">1,948</td>
+									
+								
+									
+									<td class="">1,972</td>
+									
+								
+									
+									<td class="">1,967</td>
+									
+								
+									
+									<td class="">1,982</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,927</td>
+									
+								
+									
+									<td class="">1,905</td>
+									
+								
+									
+									<td class="">1,876</td>
+									
+								
+									
+									<td class="">1,859</td>
+									
+								
+									
+									<td class="">1,826</td>
+									
+								
+									
+									<td class="">1,817</td>
+									
+								
+									
+									<td class="">1,799</td>
+									
+								
+									
+									<td class="">1,786</td>
+									
+								
+									
+									<td class="">1,781</td>
+									
+								
+									
+									<td class="">1,738</td>
+									
+								
+									
+									<td class="">1,723</td>
+									
+								
+									
+									<td class="">1,719</td>
+									
+								
+									
+									<td class="">1,730</td>
+									
+								
+									
+									<td class="">1,731</td>
+									
+								
+									
+									<td class="">1,738</td>
+									
+								
+									
+									<td class="">1,744</td>
+									
+								
+									
+									<td class="">1,747</td>
+									
+								
+									
+									<td class="">1,740</td>
+									
+								
+									
+									<td class="">1,737</td>
+									
+								
+									
+									<td class="">1,732</td>
+									
+								
+									
+									<td class="">1,728</td>
+									
+								
+									
+									<td class="">1,724</td>
+									
+								
+									
+									<td class="">1,710</td>
+									
+								
+									
+									<td class="">1,703</td>
+									
+								
+									
+									<td class="">1,630</td>
+									
+								
+									
+									<td class="">1,614</td>
+									
+								
+									
+									<td class="">1,601</td>
+									
+								
+									
+									<td class="">1,591</td>
+									
+								
+									
+									<td class="">1,590</td>
+									
+								
+									
+									<td class="">1,613</td>
+									
+								
+									
+									<td class="">1,605</td>
+									
+								
+									
+									<td class="">1,588</td>
+									
+								
+									
+									<td class="">1,576</td>
+									
+								
+									
+									<td class="">1,557</td>
+									
+								
+									
+									<td class="">1,528</td>
+									
+								
+									
+									<td class="">1,515</td>
+									
+								
+									
+									<td class="">1,503</td>
+									
+								
+									
+									<td class="">1,496</td>
+									
+								
+									
+									<td class="">1,483</td>
+									
+								
+									
+									<td class="">1,457</td>
+									
+								
+									
+									<td class="">1,470</td>
+									
+								
+									
+									<td class="">1,493</td>
+									
+								
+									
+									<td class="">1,531</td>
+									
+								
+									
+									<td class="">1,567</td>
+									
+								
+									
+									<td class="">1,673</td>
+									
+								
+									
+									<td class="">1,697</td>
+									
+								
+									
+									<td class="">1,722</td>
+									
+								
+									
+									<td class="">1,724</td>
+									
+								
+									
+									<td class="">1,729</td>
+									
+								
+									
+									<td class="">1,739</td>
+									
+								
+									
+									<td class="">1,746</td>
+									
+								
+									
+									<td class="">1,758</td>
+									
+								
+									
+									<td class="">1,774</td>
+									
+								
+									
+									<td class="">1,799</td>
+									
+								
+									
+									<td class="">1,804</td>
+									
+								
+									
+									<td class="">1,809</td>
+									
+								
+									
+									<td class="">1,828</td>
+									
+								
+									
+									<td class="">1,843</td>
+									
+								
+									
+									<td class="">1,881</td>
+									
+								
+									
+									<td class="">1,890</td>
+									
+								
+									
+									<td class="">1,920</td>
+									
+								
+									
+									<td class="">1,947</td>
+									
+								
+									
+									<td class="">1,963</td>
+									
+								
+									
+									<td class="">1,974</td>
+									
+								
+									
+									<td class="">1,961</td>
+									
+								
+									
+									<td class="">1,953</td>
+									
+								
+									
+									<td class="">1,934</td>
+									
+								
+									
+									<td class="">1,909</td>
+									
+								
+									
+									<td class="">1,914</td>
+									
+								
+									
+									<td class="">1,917</td>
+									
+								
+									
+									<td class="">1,948</td>
+									
+								
+									
+									<td class="">1,963</td>
+									
+								
+									
+									<td class="">1,959</td>
+									
+								
+									
+									<td class="">2,014</td>
+									
+								
+									
+									<td class="">2,036</td>
+									
+								
+									
+									<td class="">2,067</td>
+									
+								
+									
+									<td class="">2,057</td>
+									
+								
+									
+									<td class="">2,072</td>
+									
+								
+									
+									<td class="">2,141</td>
+									
+								
+									
+									<td class="">2,132</td>
+									
+								
+									
+									<td class="">2,099</td>
+									
+								
+									
+									<td class="">2,081</td>
+									
+								
+									
+									<td class="">2,065</td>
+									
+								
+									
+									<td class="">1,894</td>
+									
+								
+									
+									<td class="">1,882</td>
+									
+								
+									
+									<td class="">1,868</td>
+									
+								
+									
+									<td class="">1,852</td>
+									
+								
+									
+									<td class="">1,811</td>
+									
+								
+									
+									<td class="">1,797</td>
+									
+								
+									
+									<td class="">1,785</td>
+									
+								
+									
+									<td class="">1,774</td>
+									
+								
+									
+									<td class="">1,757</td>
+									
+								
+									
+									<td class="">1,720</td>
+									
+								
+									
+									<td class="">1,713</td>
+									
+								
+									
+									<td class="">1,710</td>
+									
+								
+									
+									<td class="">1,705</td>
+									
+								
+									
+									<td class="">1,708</td>
+									
+								
+									
+									<td class="">1,715</td>
+									
+								
+									
+									<td class="">1,725</td>
+									
+								
+									
+									<td class="">1,733</td>
+									
+								
+									
+									<td class="">1,741</td>
+									
+								
+									
+									<td class="">1,738</td>
+									
+								
+									
+									<td class="">1,760</td>
+									
+								
+									
+									<td class="">1,759</td>
+									
+								
+									
+									<td class="">1,765</td>
+									
+								
+									
+									<td class="">1,765</td>
+									
+								
+									
+									<td class="">1,763</td>
+									
+								
+									
+									<td class="">1,792</td>
+									
+								
+									
+									<td class="">1,814</td>
+									
+								
+									
+									<td class="">1,820</td>
+									
+								
+									
+									<td class="">1,824</td>
+									
+								
+									
+									<td class="">1,824</td>
+									
+								
+									
+									<td class="">1,861</td>
+									
+								
+									
+									<td class="">1,857</td>
+									
+								
+									
+									<td class="">1,848</td>
+									
+								
+									
+									<td class="">1,853</td>
+									
+								
+									
+									<td class="">1,877</td>
+									
+								
+									
+									<td class="">1,917</td>
+									
+								
+									
+									<td class="">1,913</td>
+									
+								
+									
+									<td class="">1,905</td>
+									
+								
+									
+									<td class="">1,895</td>
+									
+								
+									
+									<td class="">1,896</td>
+									
+								
+									
+									<td class="">1,908</td>
+									
+								
+									
+									<td class="">1,930</td>
+									
+								
+									
+									<td class="">1,945</td>
+									
+								
+									
+									<td class="">1,947</td>
+									
+								
+									
+									<td class="">1,948</td>
+									
+								
+									
+									<td class="">1,951</td>
+									
+								
+									
+									<td class="">1,958</td>
+									
+								
+									
+									<td class="">1,965</td>
+									
+								
+									
+									<td class="">1,972</td>
+									
+								
+									
+									<td class="">1,968</td>
+									
+								
+									
+									<td class="">1,963</td>
+									
+								
+									
+									<td class="">1,957</td>
+									
+								
+									
+									<td class="">1,953</td>
+									
+								
+									
+									<td class="">1,941</td>
+									
+								
+									
+									<td class="">1,910</td>
+									
+								
+									
+									<td class="">1,907</td>
+									
+								
+									
+									<td class="">1,916</td>
+									
+								
+									
+									<td class="last">1,918</td>
+									
+										</tr>
+									
+								
+									
+										<tr>
+											
+											
+												
+													<td class="first cell_tit1" rowspan="1">서울</td>
+												
+												
+											
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="last">1,800</td>
+									
+										</tr>
+									
+								
+									
+										<tr>
+											
+											
+												
+													<td class="first cell_tit1" rowspan="1">부산</td>
+												
+												
+											
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="last">1,700</td>
+									
+										</tr>
+									
+								
+									
+										<tr>
+											
+											
+												
+													<td class="first cell_tit1" rowspan="1">대구</td>
+												
+												
+											
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,200</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="last">1,700</td>
+									
+										</tr>
+									
+								
+									
+										<tr>
+											
+											
+												
+													<td class="first cell_tit1" rowspan="1">광주</td>
+												
+												
+											
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,250</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,250</td>
+									
+								
+									
+									<td class="">1,250</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,050</td>
+									
+								
+									
+									<td class="">1,000</td>
+									
+								
+									
+									<td class="">1,000</td>
+									
+								
+									
+									<td class="">1,000</td>
+									
+								
+									
+									<td class="">1,000</td>
+									
+								
+									
+									<td class="">1,050</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,250</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,200</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,150</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,250</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,450</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,550</td>
+									
+								
+									
+									<td class="">1,450</td>
+									
+								
+									
+									<td class="">1,350</td>
+									
+								
+									
+									<td class="">1,450</td>
+									
+								
+									
+									<td class="">1,450</td>
+									
+								
+									
+									<td class="">1,650</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,150</td>
+									
+								
+									
+									<td class="">2,150</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,300</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="last">1,700</td>
+									
+										</tr>
+									
+								
+									
+										<tr>
+											
+											
+												
+													<td class="first cell_tit1" rowspan="1">대전</td>
+												
+												
+											
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,900</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,300</td>
+									
+								
+									
+									<td class="">3,300</td>
+									
+								
+									
+									<td class="">4,000</td>
+									
+								
+									
+									<td class="">3,500</td>
+									
+								
+									
+									<td class="">3,500</td>
+									
+								
+									
+									<td class="">3,300</td>
+									
+								
+									
+									<td class="">3,300</td>
+									
+								
+									
+									<td class="">3,300</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">3,000</td>
+									
+								
+									
+									<td class="">2,750</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,250</td>
+									
+								
+									
+									<td class="">1,250</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">2,000</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,750</td>
+									
+								
+									
+									<td class="">1,750</td>
+									
+								
+									
+									<td class="">1,750</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,100</td>
+									
+								
+									
+									<td class="">1,100</td>
+									
+								
+									
+									<td class="">1,100</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,400</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,500</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,700</td>
+									
+								
+									
+									<td class="">2,600</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,800</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,500</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,400</td>
+									
+								
+									
+									<td class="">2,300</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,200</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">2,100</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,600</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,700</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,800</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="">1,900</td>
+									
+								
+									
+									<td class="last">1,900</td>
+									
+										</tr>
+									
+								
+								
+								
+							</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

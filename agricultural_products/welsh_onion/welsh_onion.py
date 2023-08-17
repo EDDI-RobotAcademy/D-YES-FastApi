@@ -9,4 +9,4 @@ print(df1)
 df1 = df1.fillna(0)
 print(df1)
 
-df1.to_csv('welsh_onion.csv')
+df1.to_csv('대파.csv')
