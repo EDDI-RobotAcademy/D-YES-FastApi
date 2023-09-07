@@ -62,7 +62,8 @@ end_date = end_date.strftime('%Y%m%d')
 start_date = start_date.strftime('%Y%m%d')
 
 # 기상청의 api url
-parts = urlparse('https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey=oT-QHdeESMi_kB3XhPjInw')
+weather_authkey = os.getenv('weather_authkey')
+parts = urlparse(f'https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey={weather_authkey}')
 qs = dict(parse_qsl(parts.query))
 
 # 기상청 api의 날짜 값에 start_date와 end_date의 날짜 정보를 입력함
