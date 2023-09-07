@@ -12,6 +12,8 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 def get_cabbage_price():
 
+    load_dotenv()
+
     # 최소 수확 기간과 최대 수확 기간을 변수로 받아 평균 수확 기간을 구함
     least_harvest_time = 70
     most_harvest_time = 100
@@ -24,7 +26,9 @@ def get_cabbage_price():
     print(start_date)
 
     # kamis의 api url
-    parts = urlparse('http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_kindcode=00&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key=b7b28aa9-93af-410a-a88d-a8f192e02298&p_cert_id=3536&p_returntype=json')
+    kamis_cert_key = os.getenv('kamis_cert_key')
+    kamis_cert_id = os.getenv('kamis_cert_id')
+    parts = urlparse(f'http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_kindcode=00&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key={kamis_cert_key}&p_cert_id={kamis_cert_id}&p_returntype=json')
     qs = dict(parse_qsl(parts.query))
 
     # kamis의 api 날짜 값에 start_date와 end_date의 날짜 정보를 입력함
