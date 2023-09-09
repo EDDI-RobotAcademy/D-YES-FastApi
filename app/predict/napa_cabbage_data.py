@@ -3,9 +3,13 @@
 import pandas as pd
 import requests
 import json
+import os
+from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import random
+
+load_dotenv()
 
 # 최소 수확 기간과 최대 수확 기간을 변수로 받아 평균 수확 기간을 구함
 least_harvest_time = 70
@@ -19,7 +23,9 @@ print(end_date)
 print(start_date)
 
 # kamis의 api url, 배추의 경우 4가지 종류가 있어 품종 코드를 삭제해서 전체를 출력함
-parts = urlparse('http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key=b7b28aa9-93af-410a-a88d-a8f192e02298&p_cert_id=3536&p_returntype=json')
+kamis_cert_key = os.getenv('kamis_cert_key')
+kamis_cert_id = os.getenv('kamis_cert_id')
+parts = urlparse(f'http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key={kamis_cert_key}&p_cert_id={kamis_cert_id}&p_returntype=json')
 qs = dict(parse_qsl(parts.query))
 
 # kamis의 api 날짜 값에 start_date와 end_date의 날짜 정보를 입력함
@@ -55,7 +61,8 @@ end_date = end_date.strftime('%Y%m%d')
 start_date = start_date.strftime('%Y%m%d')
 
 # 기상청의 api url
-parts = urlparse('https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey=oT-QHdeESMi_kB3XhPjInw')
+weather_authkey = os.getenv('weather_authkey')
+parts = urlparse(f'https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey={weather_authkey}')
 qs = dict(parse_qsl(parts.query))
 
 # 기상청 api의 날짜 값에 start_date와 end_date의 날짜 정보를 입력함
