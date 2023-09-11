@@ -10,123 +10,137 @@ from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import random
 from apscheduler.schedulers.blocking import BlockingScheduler
 
+
 def get_napa_cabbage_price():
-  
     load_dotenv()
 
-    # ìµœì†Œ ìˆ˜í™• ê¸°ê°„ê³¼ ìµœëŒ€ ìˆ˜í™• ê¸°ê°„ì„ ë³€ìˆ˜ë¡œ ë°›ì•„ í‰ê·  ìˆ˜í™• ê¸°ê°„ì„ êµ¬í•¨
+    # ÃÖ¼Ò ¼öÈ® ±â°£°ú ÃÖ´ë ¼öÈ® ±â°£À» º¯¼ö·Î ¹Ş¾Æ Æò±Õ ¼öÈ® ±â°£À» ±¸ÇÔ
     least_harvest_time = 70
     most_harvest_time = 100
     avg_harvest_time = int((least_harvest_time + most_harvest_time) / 2)
 
-    # ì˜¤ëŠ˜ ë‚ ì§œì™€ í‰ê·  ìˆ˜í™• ê¸°ê°„ ì „ì˜ ë‚ ì§œë¥¼ êµ¬í•¨
+    # ¿À´Ã ³¯Â¥¿Í Æò±Õ ¼öÈ® ±â°£ ÀüÀÇ ³¯Â¥¸¦ ±¸ÇÔ
     end_date = datetime.today().date()
     start_date = end_date - timedelta(avg_harvest_time)
     print(end_date)
     print(start_date)
 
-    # kamisì˜ api url, ë°°ì¶”ì˜ ê²½ìš° 4ê°€ì§€ ì¢…ë¥˜ê°€ ìˆì–´ í’ˆì¢… ì½”ë“œë¥¼ ì‚­ì œí•´ì„œ ì „ì²´ë¥¼ ì¶œë ¥í•¨
-    parts = urlparse('http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key=b7b28aa9-93af-410a-a88d-a8f192e02298&p_cert_id=3536&p_returntype=json')
+    # kamisÀÇ api url, ¹èÃßÀÇ °æ¿ì 4°¡Áö Á¾·ù°¡ ÀÖ¾î Ç°Á¾ ÄÚµå¸¦ »èÁ¦ÇØ¼­ ÀüÃ¼¸¦ Ãâ·ÂÇÔ
+    kamis_cert_key = os.getenv('kamis_cert_key')
+    kamis_cert_id = os.getenv('kamis_cert_id')
+    parts = urlparse(
+        f'http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key={kamis_cert_key}&p_cert_id={kamis_cert_id}&p_returntype=json')
     qs = dict(parse_qsl(parts.query))
 
-    # kamisì˜ api ë‚ ì§œ ê°’ì— start_dateì™€ end_dateì˜ ë‚ ì§œ ì •ë³´ë¥¼ ì…ë ¥í•¨
+    # kamisÀÇ api ³¯Â¥ °ª¿¡ start_date¿Í end_dateÀÇ ³¯Â¥ Á¤º¸¸¦ ÀÔ·ÂÇÔ
     qs['p_startday'] = start_date
     qs['p_endday'] = end_date
-    qs['p_itemcategorycode'] = '200'  # ì±„ì†Œë¥˜
-    qs['p_itemcode'] = '211'          # ë°°ì¶”
+    qs['p_itemcategorycode'] = '200'  # Ã¤¼Ò·ù
+    qs['p_itemcode'] = '211'  # ¹èÃß
 
-    # ë°”ê¾¼ api urlì„ new_urlë¡œ ì €ì¥ í›„ ë¦¬í€˜ìŠ¤íŠ¸ ë°›ìŒ
+    # ¹Ù²Û api urlÀ» new_url·Î ÀúÀå ÈÄ ¸®Äù½ºÆ® ¹ŞÀ½
     parts = parts._replace(query=urlencode(qs))
     new_url = urlunparse(parts)
     response = requests.get(new_url)
     contents = response.text
 
-    # json í˜•ì‹ì˜ ë°ì´í„°ë¥¼ ë°›ì•„ dataì˜ item ê°’ë“¤ì„ ë°›ì•„ì˜´
+    # json Çü½ÄÀÇ µ¥ÀÌÅÍ¸¦ ¹Ş¾Æ dataÀÇ item °ªµéÀ» ¹Ş¾Æ¿È
     json_ob = json.loads(contents)
     body = json_ob['data']['item']
 
-    # í‰ê·  ê°’ë§Œ ì¶”ì¶œí•˜ê³  ë°ì´í„°í”„ë ˆì„ìœ¼ë¡œ ë§Œë“¦
-    product_list = list(filter(lambda item : item['countyname'] == 'í‰ê· ', body))
+    # Æò±Õ °ª¸¸ ÃßÃâÇÏ°í µ¥ÀÌÅÍÇÁ·¹ÀÓÀ¸·Î ¸¸µê
+    product_list = list(filter(lambda item: item['countyname'] == 'Æò±Õ', body))
     product = pd.DataFrame.from_dict(product_list)
 
-    # ì—°ë„ì™€ ì›”ì¼ ì»¬ëŸ¼ì„ í•˜ë‚˜ë¡œ í•©ì¹¨
+    # ¿¬µµ¿Í ¿ùÀÏ ÄÃ·³À» ÇÏ³ª·Î ÇÕÄ§
     product['date'] = product['yyyy'] + "/" + product['regday']
     print(product)
 
-    # ë‚ ì§œì™€ ê°€ê²© ì»¬ëŸ¼ë§Œì„ ì¶”ì¶œí•´ resultë¡œ ì„ ì–¸
+    # ³¯Â¥¿Í °¡°İ ÄÃ·³¸¸À» ÃßÃâÇØ result·Î ¼±¾ğ
     result = product[['date', 'price']]
     print(result)
 
-    # ë‚ ì§œ ë°ì´í„°ë¥¼ í•˜ì´í”ˆì„ ì œê±°í•œ í˜•íƒœë¡œ ë°”ê¿ˆ
+    # ³¯Â¥ µ¥ÀÌÅÍ¸¦ ÇÏÀÌÇÂÀ» Á¦°ÅÇÑ ÇüÅÂ·Î ¹Ù²Ş
     end_date = end_date.strftime('%Y%m%d')
     start_date = start_date.strftime('%Y%m%d')
 
-    # ê¸°ìƒì²­ì˜ api url
-    parts = urlparse('https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey=oT-QHdeESMi_kB3XhPjInw')
+    # ±â»óÃ»ÀÇ api url
+    weather_authkey = os.getenv('weather_authkey')
+    parts = urlparse(
+        f'https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey={weather_authkey}')
     qs = dict(parse_qsl(parts.query))
 
-    # ê¸°ìƒì²­ apiì˜ ë‚ ì§œ ê°’ì— start_dateì™€ end_dateì˜ ë‚ ì§œ ì •ë³´ë¥¼ ì…ë ¥í•¨
+    # ±â»óÃ» apiÀÇ ³¯Â¥ °ª¿¡ start_date¿Í end_dateÀÇ ³¯Â¥ Á¤º¸¸¦ ÀÔ·ÂÇÔ
     qs['tm1'] = start_date
     qs['tm2'] = end_date
-    qs['stn'] = '100'         # ëŒ€ê´€ë ¹ ì§€ì ë²ˆí˜¸
+    qs['stn'] = '100'  # ´ë°ü·É ÁöÁ¡¹øÈ£
 
-    # ë°”ê¾¼ api urlì„ new_urlë¡œ ì €ì¥ í›„ ë¦¬í€˜ìŠ¤íŠ¸ ë°›ìŒ
+    # ¹Ù²Û api urlÀ» new_url·Î ÀúÀå ÈÄ ¸®Äù½ºÆ® ¹ŞÀ½
     parts = parts._replace(query=urlencode(qs))
     new_url = urlunparse(parts)
     response = requests.get(new_url)
     contents = response.text
 
-    # ë¶ˆí•„ìš”í•œ ì •ë³´ë“¤ì„ ì œê±°í•˜ê¸° ìœ„í•´ start_dateì˜ ê°’ê³¼ #7777ENDê°€ ì‹œì‘í•˜ëŠ” ì¸ë±ìŠ¤ë¥¼ ì¶”ì¶œí•˜ê³  startì™€ endë¡œ ì €ì¥
+    # ºÒÇÊ¿äÇÑ Á¤º¸µéÀ» Á¦°ÅÇÏ±â À§ÇØ start_dateÀÇ °ª°ú #7777END°¡ ½ÃÀÛÇÏ´Â ÀÎµ¦½º¸¦ ÃßÃâÇÏ°í start¿Í end·Î ÀúÀå
     start = contents.index(start_date)
     end = contents.index('#7777END')
 
-    # í•„ìš”í•œ ì •ë³´ë§Œì„ ì¶”ì¶œí•´ weather ë³€ìˆ˜ì— ëŒ€ì…í•˜ê³  split í•´ì¤Œ
+    # ÇÊ¿äÇÑ Á¤º¸¸¸À» ÃßÃâÇØ weather º¯¼ö¿¡ ´ëÀÔÇÏ°í split ÇØÁÜ
     weather = contents[start:end]
     split = weather.split()
 
-    # ë‚ ì”¨ ì •ë³´ì˜ ì»¬ëŸ¼ì˜ ìˆ˜ê°€ 56ê°œì´ë¯€ë¡œ 56ê°œë§ˆë‹¤ ë¦¬ìŠ¤íŠ¸ë¥¼ splití•¨
+    # ³¯¾¾ Á¤º¸ÀÇ ÄÃ·³ÀÇ ¼ö°¡ 56°³ÀÌ¹Ç·Î 56°³¸¶´Ù ¸®½ºÆ®¸¦ splitÇÔ
     def list_chunk(lst, n):
-        return [lst[i:i+n] for i in range(0, len(lst), n)]
+        return [lst[i:i + n] for i in range(0, len(lst), n)]
 
     list_chunked = list_chunk(split, 56)
 
-    # ë°ì´í„°í”„ë ˆì„ìœ¼ë¡œ ì„ ì–¸ í›„ ê° ì—´ë§ˆë‹¤ ì»¬ëŸ¼ëª…ì„ ì§€ì •í•¨
+    # µ¥ÀÌÅÍÇÁ·¹ÀÓÀ¸·Î ¼±¾ğ ÈÄ °¢ ¿­¸¶´Ù ÄÃ·³¸íÀ» ÁöÁ¤ÇÔ
     df = pd.DataFrame(list_chunked)
-    df.columns = ['ê´€ì¸¡ì¼', 'êµ­ë‚´ ì§€ì ë²ˆí˜¸', 'ì¼ í‰ê·  í’ì†', 'ì¼ í’ì •', 'ìµœëŒ€í’í–¥', 'ìµœëŒ€í’ì†', 'ìµœëŒ€í’ì† ì‹œê°', 'ìµœëŒ€ìˆœê°„í’í–¥', 'ìµœëŒ€ìˆœê°„í’ì†', 'ìµœëŒ€ìˆœê°„í’ì† ì‹œê°', 'ì¼ í‰ê· ê¸°ì˜¨', 'ìµœê³ ê¸°ì˜¨', 'ìµœê³ ê¸°ì˜¨ ì‹œê°', 'ìµœì €ê¸°ì˜¨', 'ìµœì €ê¸°ì˜¨ ì‹œê°', 'ì¼ í‰ê·  ì´ìŠ¬ì ì˜¨ë„', 'ì¼ í‰ê·  ì§€ë©´ì˜¨ë„', 'ì¼ ìµœì € ì´ˆìƒì˜¨ë„', 'ì¼ í‰ê·  ìƒëŒ€ìŠµë„', 'ìµœì €ìŠµë„', 'ìµœì €ìŠµë„ ì‹œê°', 'ì¼ í‰ê·  ìˆ˜ì¦ê¸°ì••', 'ì†Œí˜• ì¦ë°œëŸ‰', 'ëŒ€í˜• ì¦ë°œëŸ‰', 'ì•ˆê°œê³„ì†ì‹œê°„', 'ì¼ í‰ê·  í˜„ì§€ê¸°ì••', 'ì¼ í‰ê·  í•´ë©´ê¸°ì••', 'ìµœê³  í•´ë©´ê¸°ì••', 'ìµœê³  í•´ë©´ê¸°ì•• ì‹œê°', 'ìµœì € í•´ë©´ê¸°ì••', 'ìµœì € í•´ë©´ê¸°ì•• ì‹œê°', 'ì¼ í‰ê·  ì „ìš´ëŸ‰', 'ì¼ì¡°í•©', 'ê°€ì¡°ì‹œê°„', 'ìº„ë²¨ ì¼ì¡°', 'ì¼ì‚¬í•©', 'ìµœëŒ€ 1ì‹œê°„ì¼ì‚¬', 'ìµœëŒ€ 1ì‹œê°„ì¼ì‚¬ ì‹œê°', 'ì¼ ê°•ìˆ˜ëŸ‰', '9-9 ê°•ìˆ˜ëŸ‰', 'ê°•ìˆ˜ê³„ì†ì‹œê°„', '1ì‹œê°„ ìµœë‹¤ê°•ìˆ˜ëŸ‰', '1ì‹œê°„ ìµœë‹¤ê°•ìˆ˜ëŸ‰ ì‹œê°', '10ë¶„ê°„ ìµœë‹¤ê°•ìˆ˜ëŸ‰', '10ë¶„ê°„ ìµœë‹¤ê°•ìˆ˜ëŸ‰ ì‹œê°', 'ìµœëŒ€ ê°•ìš°ê°•ë„', 'ìµœëŒ€ ê°•ìš°ê°•ë„ ì‹œê°', 'ìµœì‹¬ ì‹ ì ì„¤', 'ìµœì‹¬ ì‹ ì ì„¤ ì‹œê°', 'ìµœì‹¬ ì ì„¤', 'ìµœì‹¬ ì ì„¤ ì‹œê°', '0.5m ì§€ì¤‘ì˜¨ë„', '1.0m ì§€ì¤‘ì˜¨ë„', '1.5m ì§€ì¤‘ì˜¨ë„', '3.0m ì§€ì¤‘ì˜¨ë„', '5.0m ì§€ì¤‘ì˜¨ë„']
+    df.columns = ['°üÃøÀÏ', '±¹³» ÁöÁ¡¹øÈ£', 'ÀÏ Æò±Õ Ç³¼Ó', 'ÀÏ Ç³Á¤', 'ÃÖ´ëÇ³Çâ', 'ÃÖ´ëÇ³¼Ó', 'ÃÖ´ëÇ³¼Ó ½Ã°¢', 'ÃÖ´ë¼ø°£Ç³Çâ', 'ÃÖ´ë¼ø°£Ç³¼Ó', 'ÃÖ´ë¼ø°£Ç³¼Ó ½Ã°¢',
+                  'ÀÏ Æò±Õ±â¿Â', 'ÃÖ°í±â¿Â', 'ÃÖ°í±â¿Â ½Ã°¢', 'ÃÖÀú±â¿Â', 'ÃÖÀú±â¿Â ½Ã°¢', 'ÀÏ Æò±Õ ÀÌ½½Á¡¿Âµµ', 'ÀÏ Æò±Õ Áö¸é¿Âµµ', 'ÀÏ ÃÖÀú ÃÊ»ó¿Âµµ', 'ÀÏ Æò±Õ »ó´ë½Àµµ',
+                  'ÃÖÀú½Àµµ', 'ÃÖÀú½Àµµ ½Ã°¢', 'ÀÏ Æò±Õ ¼öÁõ±â¾Ğ', '¼ÒÇü Áõ¹ß·®', '´ëÇü Áõ¹ß·®', '¾È°³°è¼Ó½Ã°£', 'ÀÏ Æò±Õ ÇöÁö±â¾Ğ', 'ÀÏ Æò±Õ ÇØ¸é±â¾Ğ', 'ÃÖ°í ÇØ¸é±â¾Ğ',
+                  'ÃÖ°í ÇØ¸é±â¾Ğ ½Ã°¢', 'ÃÖÀú ÇØ¸é±â¾Ğ', 'ÃÖÀú ÇØ¸é±â¾Ğ ½Ã°¢', 'ÀÏ Æò±Õ Àü¿î·®', 'ÀÏÁ¶ÇÕ', '°¡Á¶½Ã°£', 'Ä¯º§ ÀÏÁ¶', 'ÀÏ»çÇÕ', 'ÃÖ´ë 1½Ã°£ÀÏ»ç',
+                  'ÃÖ´ë 1½Ã°£ÀÏ»ç ½Ã°¢', 'ÀÏ °­¼ö·®', '9-9 °­¼ö·®', '°­¼ö°è¼Ó½Ã°£', '1½Ã°£ ÃÖ´Ù°­¼ö·®', '1½Ã°£ ÃÖ´Ù°­¼ö·® ½Ã°¢', '10ºĞ°£ ÃÖ´Ù°­¼ö·®',
+                  '10ºĞ°£ ÃÖ´Ù°­¼ö·® ½Ã°¢', 'ÃÖ´ë °­¿ì°­µµ', 'ÃÖ´ë °­¿ì°­µµ ½Ã°¢', 'ÃÖ½É ½ÅÀû¼³', 'ÃÖ½É ½ÅÀû¼³ ½Ã°¢', 'ÃÖ½É Àû¼³', 'ÃÖ½É Àû¼³ ½Ã°¢', '0.5m ÁöÁß¿Âµµ',
+                  '1.0m ÁöÁß¿Âµµ', '1.5m ÁöÁß¿Âµµ', '3.0m ÁöÁß¿Âµµ', '5.0m ÁöÁß¿Âµµ']
 
-    # í•„ìš”í•œ ì»¬ëŸ¼ë§Œì„ weather ë³€ìˆ˜ì— ëŒ€ì…
-    weather_df = df[['ê´€ì¸¡ì¼', 'êµ­ë‚´ ì§€ì ë²ˆí˜¸', 'ì¼ í‰ê· ê¸°ì˜¨', 'ìµœê³ ê¸°ì˜¨', 'ìµœì €ê¸°ì˜¨', 'ì¼ í‰ê·  ì „ìš´ëŸ‰', 'ì¼ì¡°í•©', 'ì¼ ê°•ìˆ˜ëŸ‰']]
-    #print(weather_df)
+    # ÇÊ¿äÇÑ ÄÃ·³¸¸À» weather º¯¼ö¿¡ ´ëÀÔ
+    weather_df = df[['°üÃøÀÏ', '±¹³» ÁöÁ¡¹øÈ£', 'ÀÏ Æò±Õ±â¿Â', 'ÃÖ°í±â¿Â', 'ÃÖÀú±â¿Â', 'ÀÏ Æò±Õ Àü¿î·®', 'ÀÏÁ¶ÇÕ', 'ÀÏ °­¼ö·®']]
+    # print(weather_df)
 
-    random_number = random.choices(range(500,2000), k=14)
+    random_number = random.choices(range(3500, 20000), k=14)
     print(random_number)
 
     data = {"random_number": random_number}
 
     return random_number
 
-def send_random_number():
 
+def send_random_number():
     random_number = get_napa_cabbage_price()
     load_dotenv()
     spring_url = os.getenv('spring')
     api_url = f"{spring_url}/farmProduce/save-kimchi-cabbage-price"
 
-    data = {"date": datetime.today().strftime('%Y-%m-%d'), "farmProduceName": "kimchiCabbage", "farmProducePrice": random_number}
+    data = {"date": datetime.today().strftime('%Y-%m-%d'), "farmProduceName": "kimchiCabbage",
+            "farmProducePrice": random_number}
 
     try:
         response = requests.post(api_url, json=data)
 
         if response.status_code == 200:
-            print("ìŠ¤í”„ë§ìœ¼ë¡œ ì „ì†¡ ì„±ê³µ")
+            print("½ºÇÁ¸µÀ¸·Î Àü¼Û ¼º°ø")
         else:
-            print("ìŠ¤í”„ë§ìœ¼ë¡œ ì „ì†¡ ì‹¤íŒ¨")
+            print("½ºÇÁ¸µÀ¸·Î Àü¼Û ½ÇÆĞ")
     except Exception as e:
-        print(f"ì˜¤ë¥˜ ë°œìƒ: {str(e)}")
+        print(f"¿À·ù ¹ß»ı: {str(e)}")
+
 
 if __name__ == "__main__":
     scheduler = BlockingScheduler()
 
-    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul', start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
 
     scheduler.start()

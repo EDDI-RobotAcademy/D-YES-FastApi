@@ -10,8 +10,8 @@ from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import random
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-def get_cabbage_price():
 
+def get_cabbage_price():
     load_dotenv()
 
     # 최소 수확 기간과 최대 수확 기간을 변수로 받아 평균 수확 기간을 구함
@@ -28,15 +28,16 @@ def get_cabbage_price():
     # kamis의 api url
     kamis_cert_key = os.getenv('kamis_cert_key')
     kamis_cert_id = os.getenv('kamis_cert_id')
-    parts = urlparse(f'http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_kindcode=00&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key={kamis_cert_key}&p_cert_id={kamis_cert_id}&p_returntype=json')
+    parts = urlparse(
+        f'http://www.kamis.or.kr/service/price/xml.do?action=periodProductList&p_productclscode=02&p_startday=2022-10-01&p_endday=2022-10-31&p_itemcategorycode=200&p_itemcode=246&p_kindcode=00&p_productrankcode=01&p_convert_kg_yn=N&p_cert_key={kamis_cert_key}&p_cert_id={kamis_cert_id}&p_returntype=json')
     qs = dict(parse_qsl(parts.query))
 
     # kamis의 api 날짜 값에 start_date와 end_date의 날짜 정보를 입력함
     qs['p_startday'] = start_date
     qs['p_endday'] = end_date
     qs['p_itemcategorycode'] = '200'  # 채소류
-    qs['p_itemcode'] = '212'          # 양배추
-    qs['p_kindcode'] = '00'           # 양배추
+    qs['p_itemcode'] = '212'  # 양배추
+    qs['p_kindcode'] = '00'  # 양배추
 
     # 바꾼 api url을 new_url로 저장 후 리퀘스트 받음
     parts = parts._replace(query=urlencode(qs))
@@ -49,7 +50,7 @@ def get_cabbage_price():
     body = json_ob['data']['item']
 
     # 평균 값만 추출하고 데이터프레임으로 만듦
-    product_list = list(filter(lambda item : item['countyname'] == '평균', body))
+    product_list = list(filter(lambda item: item['countyname'] == '평균', body))
     product = pd.DataFrame.from_dict(product_list)
 
     # 연도와 월일 컬럼을 하나로 합침
@@ -66,13 +67,14 @@ def get_cabbage_price():
 
     # 기상청의 api url
     weather_authkey = os.getenv('weather_authkey')
-    parts = urlparse(f'https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey={weather_authkey}')
+    parts = urlparse(
+        f'https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php?tm1=20090101&tm2=20191231&stn=212&authKey={weather_authkey}')
     qs = dict(parse_qsl(parts.query))
 
     # 기상청 api의 날짜 값에 start_date와 end_date의 날짜 정보를 입력함
     qs['tm1'] = start_date
     qs['tm2'] = end_date
-    qs['stn'] = '100'         # 대관령 지점번호
+    qs['stn'] = '100'  # 대관령 지점번호
 
     # 바꾼 api url을 new_url로 저장 후 리퀘스트 받음
     parts = parts._replace(query=urlencode(qs))
@@ -90,33 +92,40 @@ def get_cabbage_price():
 
     # 날씨 정보의 컬럼의 수가 56개이므로 56개마다 리스트를 split함
     def list_chunk(lst, n):
-        return [lst[i:i+n] for i in range(0, len(lst), n)]
+        return [lst[i:i + n] for i in range(0, len(lst), n)]
 
     list_chunked = list_chunk(split, 56)
 
     # 데이터프레임으로 선언 후 각 열마다 컬럼명을 지정함
     df = pd.DataFrame(list_chunked)
-    df.columns = ['관측일', '국내 지점번호', '일 평균 풍속', '일 풍정', '최대풍향', '최대풍속', '최대풍속 시각', '최대순간풍향', '최대순간풍속', '최대순간풍속 시각', '일 평균기온', '최고기온', '최고기온 시각', '최저기온', '최저기온 시각', '일 평균 이슬점온도', '일 평균 지면온도', '일 최저 초상온도', '일 평균 상대습도', '최저습도', '최저습도 시각', '일 평균 수증기압', '소형 증발량', '대형 증발량', '안개계속시간', '일 평균 현지기압', '일 평균 해면기압', '최고 해면기압', '최고 해면기압 시각', '최저 해면기압', '최저 해면기압 시각', '일 평균 전운량', '일조합', '가조시간', '캄벨 일조', '일사합', '최대 1시간일사', '최대 1시간일사 시각', '일 강수량', '9-9 강수량', '강수계속시간', '1시간 최다강수량', '1시간 최다강수량 시각', '10분간 최다강수량', '10분간 최다강수량 시각', '최대 강우강도', '최대 강우강도 시각', '최심 신적설', '최심 신적설 시각', '최심 적설', '최심 적설 시각', '0.5m 지중온도', '1.0m 지중온도', '1.5m 지중온도', '3.0m 지중온도', '5.0m 지중온도']
+    df.columns = ['관측일', '국내 지점번호', '일 평균 풍속', '일 풍정', '최대풍향', '최대풍속', '최대풍속 시각', '최대순간풍향', '최대순간풍속', '최대순간풍속 시각',
+                  '일 평균기온', '최고기온', '최고기온 시각', '최저기온', '최저기온 시각', '일 평균 이슬점온도', '일 평균 지면온도', '일 최저 초상온도', '일 평균 상대습도',
+                  '최저습도', '최저습도 시각', '일 평균 수증기압', '소형 증발량', '대형 증발량', '안개계속시간', '일 평균 현지기압', '일 평균 해면기압', '최고 해면기압',
+                  '최고 해면기압 시각', '최저 해면기압', '최저 해면기압 시각', '일 평균 전운량', '일조합', '가조시간', '캄벨 일조', '일사합', '최대 1시간일사',
+                  '최대 1시간일사 시각', '일 강수량', '9-9 강수량', '강수계속시간', '1시간 최다강수량', '1시간 최다강수량 시각', '10분간 최다강수량',
+                  '10분간 최다강수량 시각', '최대 강우강도', '최대 강우강도 시각', '최심 신적설', '최심 신적설 시각', '최심 적설', '최심 적설 시각', '0.5m 지중온도',
+                  '1.0m 지중온도', '1.5m 지중온도', '3.0m 지중온도', '5.0m 지중온도']
 
     # 필요한 컬럼만을 weather 변수에 대입
     weather_df = df[['관측일', '국내 지점번호', '일 평균기온', '최고기온', '최저기온', '일 평균 전운량', '일조합', '일 강수량']]
     # print(weather_df)
 
-    random_number = random.choices(range(500,2000), k=14)
+    random_number = random.choices(range(4000, 6000), k=14)
     print(random_number)
 
     data = {"random_number": random_number}
 
     return random_number
 
-def send_random_number():
 
+def send_random_number():
     random_number = get_cabbage_price()
     load_dotenv()
     spring_url = os.getenv('spring')
     api_url = f"{spring_url}/farmProduce/save-cabbage-price"
 
-    data = {"date": datetime.today().strftime('%Y-%m-%d'), "farmProduceName": "cabbage", "farmProducePrice": random_number}
+    data = {"date": datetime.today().strftime('%Y-%m-%d'), "farmProduceName": "cabbage",
+            "farmProducePrice": random_number}
 
     try:
         response = requests.post(api_url, json=data)
@@ -128,9 +137,11 @@ def send_random_number():
     except Exception as e:
         print(f"오류 발생: {str(e)}")
 
+
 if __name__ == "__main__":
     scheduler = BlockingScheduler()
 
-    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul', start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
 
     scheduler.start()
