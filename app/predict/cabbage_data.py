@@ -22,23 +22,21 @@ def get_cabbage_price():
     print(kamis_price_data)
 
     # 평균 기온 데이터 가져오기
-    temp_start_days = 122
-    temp_end_days = 106
+    temp_start_days = 77
+    temp_end_days = 61
     temp_column = '일 평균기온'
     temp_weather_data = get_weather_data(temp_start_days, temp_end_days, temp_column)
     print(temp_weather_data)
 
     # 강수량 데이터 가져오기
-    rain_start_days = 83
-    rain_end_days = 67
+    rain_start_days = 60
+    rain_end_days = 44
     rain_column = '일 강수량'
     rain_weather_data = get_weather_data(rain_start_days, rain_end_days, rain_column)
     print(rain_weather_data)
 
     random_number = random.choices(range(4000, 6000), k=14)
     print(random_number)
-
-    data = {"random_number": random_number}
 
     return random_number
 
