@@ -7,7 +7,6 @@ from datetime import datetime
 import random
 from weather_data import get_weather_data
 from price_data import get_kamis_price_data
-from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 def get_napa_cabbage_price():
@@ -41,7 +40,7 @@ def get_napa_cabbage_price():
     return random_number
 
 
-def send_random_number():
+def send_random_number_napa_cabbage():
     random_number = get_napa_cabbage_price()
     load_dotenv()
     spring_url = os.getenv('spring')
@@ -60,11 +59,3 @@ def send_random_number():
     except Exception as e:
         print(f"오류 발생: {str(e)}")
 
-
-if __name__ == "__main__":
-    scheduler = BlockingScheduler()
-
-    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
-                      start_date='2023-09-06 14:45:00')
-
-    scheduler.start()

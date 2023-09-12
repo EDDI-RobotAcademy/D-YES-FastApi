@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 import random
-from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 def get_cucumber_price():
@@ -118,7 +117,7 @@ def get_cucumber_price():
     return random_number
 
 
-def send_random_number():
+def send_random_number_cucumber():
     random_number = get_cucumber_price()
     load_dotenv()
     spring_url = os.getenv('spring')
@@ -136,12 +135,3 @@ def send_random_number():
             print("스프링으로 전송 실패")
     except Exception as e:
         print(f"오류 발생: {str(e)}")
-
-
-if __name__ == "__main__":
-    scheduler = BlockingScheduler()
-
-    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
-                      start_date='2023-09-06 14:45:00')
-
-    scheduler.start()

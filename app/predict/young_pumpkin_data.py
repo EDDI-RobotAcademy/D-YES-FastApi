@@ -7,7 +7,6 @@ from datetime import datetime
 from weather_data import get_weather_data
 from price_data import get_kamis_price_data
 import random
-from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 def get_young_pumpkin_price():
@@ -41,7 +40,7 @@ def get_young_pumpkin_price():
     return random_number
 
 
-def send_random_number():
+def send_random_number_young_pumpkin():
     random_number = get_young_pumpkin_price()
     load_dotenv()
     spring_url = os.getenv('spring')
@@ -59,12 +58,3 @@ def send_random_number():
             print("스프링으로 전송 실패")
     except Exception as e:
         print(f"오류 발생: {str(e)}")
-
-
-if __name__ == "__main__":
-    scheduler = BlockingScheduler()
-
-    scheduler.add_job(send_random_number, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
-                      start_date='2023-09-06 14:45:00')
-
-    scheduler.start()
