@@ -4,8 +4,8 @@ import requests
 import os
 from dotenv import load_dotenv
 from datetime import datetime
-from weather_data import get_weather_data
-from price_data import get_kamis_price_data
+from app.predict.weather_data import get_weather_data
+from app.predict.price_data import get_kamis_price_data
 import random
 
 
