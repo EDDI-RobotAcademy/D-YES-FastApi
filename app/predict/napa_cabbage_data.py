@@ -38,8 +38,6 @@ def get_napa_cabbage_price():
     random_number = random.choices(range(3500, 20000), k=14)
     print(random_number)
 
-    data = {"random_number": random_number}
-
     return random_number
 
 

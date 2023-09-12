@@ -38,8 +38,6 @@ def get_young_pumpkin_price():
     random_number = random.choices(range(8000, 40000), k=14)
     print(random_number)
 
-    data = {"random_number": random_number}
-
     return random_number
 
 
