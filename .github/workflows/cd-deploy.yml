@@ -44,6 +44,8 @@ jobs:
         run: |
           pwd
           echo "${{ secrets.CD_DEPLOY_CONFIG }}" > .env
+          echo "${{ secrets.KAMIS_PROPERTIES }}" >> .env
+          echo "${{ secrets.WEATHER_PROPERTIES }}" >> .env
           cat .env
           
       - name: Build and push Docker image
