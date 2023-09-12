@@ -25,9 +25,37 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/get-origins")
 def read_root():
     return os.getenv('origins')
+
+
+def create_farm_produce_price():
+    scheduler = BlockingScheduler()
+
+    scheduler.add_job(send_random_number_cabbage, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_carrot, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_cucumber, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_napa_cabbage, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_onion, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_potato, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_welsh_onion, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+    scheduler.add_job(send_random_number_young_pumpkin, 'interval', hours=24, minutes=0, seconds=10, timezone='Asia/Seoul',
+                      start_date='2023-09-06 14:45:00')
+
+    scheduler.start()
+
+
+create_farm_produce_price()
+
 
 # def test1():
 #     print("양배추")
@@ -62,6 +90,7 @@ def get_cabbage_price_start():
 
     scheduler.start()
 
+
 @app.get("/get-carrot-price")
 def get_carrot_price_start():
     scheduler = BlockingScheduler()
@@ -70,6 +99,7 @@ def get_carrot_price_start():
                       start_date='2023-09-06 14:45:00')
 
     scheduler.start()
+
 
 @app.get("/get-cucumber-price")
 def get_cucumber_price_start():
@@ -80,14 +110,17 @@ def get_cucumber_price_start():
 
     scheduler.start()
 
+
 @app.get("/get-napa-cabbage-price")
 def get_napa_cabbage_price_start():
     scheduler = BlockingScheduler()
 
-    scheduler.add_job(send_random_number_napa_cabbage, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
+    scheduler.add_job(send_random_number_napa_cabbage, 'interval', hours=24, minutes=0, seconds=0,
+                      timezone='Asia/Seoul',
                       start_date='2023-09-06 14:45:00')
 
     scheduler.start()
+
 
 @app.get("/get-onion-price")
 def get_onion_price_start():
@@ -98,6 +131,7 @@ def get_onion_price_start():
 
     scheduler.start()
 
+
 @app.get("/get-potato-price")
 def get_potato_price_start():
     scheduler = BlockingScheduler()
@@ -106,6 +140,7 @@ def get_potato_price_start():
                       start_date='2023-09-06 14:45:00')
 
     scheduler.start()
+
 
 @app.get("/get-welsh-onion-price")
 def get_welsh_onion_price_start():
@@ -116,11 +151,13 @@ def get_welsh_onion_price_start():
 
     scheduler.start()
 
+
 @app.get("/get-young-pumpkin-price")
 def get_young_pumpkin_price_start():
     scheduler = BlockingScheduler()
 
-    scheduler.add_job(send_random_number_young_pumpkin, 'interval', hours=24, minutes=0, seconds=0, timezone='Asia/Seoul',
+    scheduler.add_job(send_random_number_young_pumpkin, 'interval', hours=24, minutes=0, seconds=0,
+                      timezone='Asia/Seoul',
                       start_date='2023-09-06 14:45:00')
 
     scheduler.start()
