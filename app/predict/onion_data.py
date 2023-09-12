@@ -5,8 +5,8 @@ import os
 from dotenv import load_dotenv
 from datetime import datetime
 import random
-from weather_data import get_weather_data
-from price_data import get_kamis_price_data
+from app.predict.weather_data import get_weather_data
+from app.predict.price_data import get_kamis_price_data
 
 
 def get_onion_price():
